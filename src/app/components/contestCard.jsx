@@ -114,7 +114,7 @@ export const CardExample = ({ image, title, time, link, site }) => {
         {/* Contest Button */}
         <CButton
           color="primary"
-          className="w-full text-sm font-semibold py-1.5 mt-2 transition hover:bg-blue-600"
+          className="w-full text-sm rounded-2xl font-semibold py-1.5 mt-2 transition hover:bg-blue-600"
           onClick={() => router.push(link)}
         >
           Go to Contest

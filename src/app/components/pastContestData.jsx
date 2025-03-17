@@ -112,13 +112,24 @@ export const CardExample = ({ image, title, time, link, site }) => {
         </CCardText>
 
         {/* Contest Button */}
+        <div className="flex">
         <CButton
           color="primary"
-          className="w-full text-sm font-semibold py-1.5 mt-2 transition hover:bg-blue-600"
+          className="w-full text-sm font-semibold rounded-2xl py-1.5 mt-2 transition hover:bg-blue-600"
           onClick={() => router.push(link)}
         >
           Go to Contest
         </CButton>
+        {(link==="")?<h3>Coming soon....</h3>:
+        <CButton
+          color="primary"
+          className="w-full text-sm font-semibold py-1.5 mt-2 rounded-2xl transition bg-blue-200 hover:bg-green-300"
+          onClick={() => router.push(link)}
+        >
+          TLE Analysis
+        </CButton>
+        }
+        </div>
       </CCardBody>
     </CCard>
   );
