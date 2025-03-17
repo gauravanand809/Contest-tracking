@@ -120,7 +120,7 @@ export const CardExample = ({ image, title, time, link, site }) => {
         >
           Go to Contest
         </CButton>
-        {(link==="")?<h3>Coming soon....</h3>:
+        {(title==="")?<h3>Coming soon....</h3>:
         <CButton
           color="primary"
           className="w-full text-sm font-semibold py-1.5 mt-2 rounded-2xl transition bg-blue-200 hover:bg-green-300"
